@@ -4,6 +4,7 @@ out/
 *.exe
 .idea/
 out
+reports
 
 # Compiled class file
 *.class
