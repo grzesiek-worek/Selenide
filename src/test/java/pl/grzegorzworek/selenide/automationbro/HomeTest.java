@@ -15,6 +15,8 @@ import static org.testng.Assert.*;
 
 public class HomeTest {
 
+    HomePage homePage = new HomePage();
+
     @Test
     public void testPageUrlAndTitle(){
         open("https://practice.automationbro.com/");
@@ -30,14 +32,14 @@ public class HomeTest {
     public void testInteractingWithElements() {
         open("https://practice.automationbro.com/");
 
-        $(By.id("get-started")).click();
+        homePage.getStartedBtn().click();
 
         String url = WebDriverRunner.url();
         assertTrue(url.contains("get-started"));
 
-        $("h1").shouldHave(text("Think different. Make different."));
+        homePage.headingTitle().shouldHave(text("Think different. Make different."));
 
-        $x("//a[@class=\"custom-logo-link\"]").shouldBe(visible);
+        homePage.logoLink().shouldBe(visible);
     }
 
     @Test
@@ -46,8 +48,8 @@ public class HomeTest {
 
         List<String> expectedLinks = List.of("Home", "About","Shop", "Blog","Contact","My account");
 
-        ElementsCollection linkLists = $$("#primary-menu li[id*=menu-item]");
+        //ElementsCollection linkLists = homePage.linksList();
 
-        linkLists.shouldHave(CollectionCondition.texts(expectedLinks));
+        homePage.linksList().shouldHave(CollectionCondition.texts(expectedLinks));
     }
 }
