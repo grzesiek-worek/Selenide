@@ -1,5 +1,7 @@
 package pl.grzegorzworek.selenide.saucetest;
 
+import com.codeborne.selenide.Selenide;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,9 +14,9 @@ public class Base {
         open("https://www.saucedemo.com/");
     }
 
-
-    @Test
-    public void test(){
-
+    @After
+    public void clearBrowser() {
+        Selenide.clearBrowserCookies();
+        Selenide.clearBrowserLocalStorage();
     }
 }
