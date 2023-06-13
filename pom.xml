@@ -14,6 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <selenide.version>6.15.0</selenide.version>
         <junit.version>4.13.2</junit.version>
+        <testng.version>7.8.0</testng.version>
 
     </properties>
     <dependencies>
@@ -27,6 +28,13 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
