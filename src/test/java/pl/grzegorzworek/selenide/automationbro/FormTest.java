@@ -14,7 +14,7 @@ public class FormTest {
         $(".support-name input").val("Greg");
         $(".support-email input").val("test@gmail.com");
         $(".support-subject input").val("Need help with repairing my shop");
-        $(".support-dropdown input").selectOption("Technical Team");
+        $(".support-dropdown select").selectOption("Technical Team");
         $(".support-checkboxes ul li:nth-child(2) input").click();
         $(".support-date input").click();
         $(".flatpickr-day.nextMonthDay").click();
