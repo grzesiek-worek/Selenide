@@ -48,8 +48,6 @@ public class HomeTest {
 
         List<String> expectedLinks = List.of("Home", "About","Shop", "Blog","Contact","My account");
 
-        //ElementsCollection linkLists = homePage.linksList();
-
         homePage.linksList().shouldHave(CollectionCondition.texts(expectedLinks));
     }
 }
