@@ -11,6 +11,9 @@ public class UploadTest {
     @Test
     public void testUploadFileOnVisibleInput() {
         open("https://the-internet.herokuapp.com/upload");
+
         $("#file-upload").uploadFile(new File("src/test/java/pl/grzegorzworek/selenide/data/sample.png"));
+
+        $("#file-submit").click();
     }
 }
