@@ -18,5 +18,6 @@ public class GoogleSearchTest extends Base{
         $(By.name("q")).setValue("Selenide").pressEnter();
 
         $(By.tagName("h3")).shouldHave(Condition.exactText("Selenide: concise UI tests in Java"));
+        $$("#res .g").shouldHave(CollectionCondition.size(9));
     }
 }
