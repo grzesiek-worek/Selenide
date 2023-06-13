@@ -1,5 +1,6 @@
 package pl.grzegorzworek.selenide.automationbro;
 
+import com.codeborne.selenide.Condition;
 import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -19,6 +20,6 @@ public class FormTest {
         $(".flatpickr-day.nextMonthDay").click();
 
         $("button[type=submit]").click();
-
+        $("div[role=alert").shouldHave(Condition.text("Thanks for contacting us! We will be in touch with you shortly."));
     }
 }
