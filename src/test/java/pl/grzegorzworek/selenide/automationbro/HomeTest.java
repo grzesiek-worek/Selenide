@@ -5,6 +5,7 @@ import com.codeborne.selenide.WebDriverRunner;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 import static org.testng.Assert.*;
 
@@ -29,5 +30,7 @@ public class HomeTest {
 
         String url = WebDriverRunner.url();
         assertTrue(url.contains("get-started"));
+
+        $("h1").shouldHave(text("Think different. Make different."));
     }
 }
