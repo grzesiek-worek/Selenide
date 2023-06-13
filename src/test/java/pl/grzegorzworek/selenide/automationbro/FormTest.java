@@ -14,6 +14,7 @@ public class FormTest {
         $(".support-email input").val("test@gmail.com");
         $(".support-subject input").val("Need help with repairing my shop");
 
+        $(".support-dropdown input").selectOption("Technical Team");
 
     }
 }
