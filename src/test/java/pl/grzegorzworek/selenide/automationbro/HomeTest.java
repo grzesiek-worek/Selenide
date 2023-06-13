@@ -5,7 +5,7 @@ import com.codeborne.selenide.WebDriverRunner;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 import static org.testng.Assert.*;
 
@@ -32,5 +32,7 @@ public class HomeTest {
         assertTrue(url.contains("get-started"));
 
         $("h1").shouldHave(text("Think different. Make different."));
+
+        $x("//a[@class=\"custom-logo-link\"]").shouldBe(visible);
     }
 }
