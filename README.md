@@ -1,11 +1,10 @@
 # Selenide
-Automation Testing - Tasks using: Java, Selenide, JUnit
-
-Tasks using: Java, Selenide, JUnit, Page Pattern
+Automation Testing - Tasks using: Java, Selenide, JUnit, TestNG, Page Pattern
 
 ![Java](https://img.shields.io/badge/-JAVA-0A1A5A?style=flat&logo=java)
 ![Selenide](https://img.shields.io/badge/-Selenide-0A1A5A?style=flat&logo=selenide)
 ![JUnit](https://img.shields.io/badge/-JUnit-0A1A5A?style=flat&logo=junit)
+![TestNG](https://img.shields.io/badge/-TestNG-0A1A5A?style=flat&logo=testng)
 ![Page Pattern](https://img.shields.io/badge/-PagePattern-0A1A5A?style=flat&logo=pagepattern)
 
 
@@ -23,5 +22,11 @@ Search Keyword *"Selenide"* in <a href="src/test/java/pl/grzegorzworek/selenide/
 - complete search field and press Enter
 - check result - exact text
 - check result - size collection
+
+### 3) Third task with using: Java, Selenide and TestNG
+Open <a href="src/test/java/pl/grzegorzworek/selenide/automationbro">Automation Bro </a>site and:
+- check url 
+- check title site
+
 
 ### ... project in progress ...
