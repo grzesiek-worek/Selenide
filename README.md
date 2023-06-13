@@ -27,6 +27,8 @@ Search Keyword *"Selenide"* in <a href="src/test/java/pl/grzegorzworek/selenide/
 Open <a href="src/test/java/pl/grzegorzworek/selenide/automationbro">Automation Bro </a>site and:
 - check url 
 - check title site
-
+- find element by Id and verify url contains
+- verify heading by CssSelector
+- verify visible element by xPath
 
 ### ... project in progress ...
