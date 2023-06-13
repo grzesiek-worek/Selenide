@@ -32,6 +32,7 @@ Open <a href="src/test/java/pl/grzegorzworek/selenide/automationbro">Automation 
 - verify visible element by xPath
 - verify multiple element - check exception element from menu
 - find and fill form and verify alert
-- add and upload file, verify upload successful text
+- add and upload file, verify upload successful text (visible input)
+- add and upload file, verify upload successful text (hidden input)
 
 ### ... project in progress ...
