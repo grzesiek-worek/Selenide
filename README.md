@@ -1,11 +1,11 @@
 # Selenide
-Automation Testing - Tasks using: Java, Selenide, JUnit, TestNG, Page Pattern
+Automation Testing - Tasks using: Java, Selenide, JUnit, TestNG, Page Object Model
 
 ![Java](https://img.shields.io/badge/-JAVA-0A1A5A?style=flat&logo=java)
 ![Selenide](https://img.shields.io/badge/-Selenide-0A1A5A?style=flat&logo=selenide)
 ![JUnit](https://img.shields.io/badge/-JUnit-0A1A5A?style=flat&logo=junit)
 ![TestNG](https://img.shields.io/badge/-TestNG-0A1A5A?style=flat&logo=testng)
-![Page Pattern](https://img.shields.io/badge/-PagePattern-0A1A5A?style=flat&logo=pagepattern)
+![Page Object Model](https://img.shields.io/badge/-PageObjectModel-0A1A5A?style=flat&logo=pageobjectmodel)
 
 
 ## Task description:
@@ -23,7 +23,7 @@ Search Keyword *"Selenide"* in <a href="src/test/java/pl/grzegorzworek/selenide/
 - check result - exact text
 - check result - size collection
 
-### 3) Third task with using: Java, Selenide and TestNG
+### 3) Third task with using: Java, Selenide, TestNG and Page Object Model
 Open <a href="src/test/java/pl/grzegorzworek/selenide/automationbro">Automation Bro </a>site and:
 - check url 
 - check title site
@@ -34,5 +34,6 @@ Open <a href="src/test/java/pl/grzegorzworek/selenide/automationbro">Automation 
 - find and fill form and verify alert
 - add and upload file, verify upload successful text (visible input)
 - add and upload file, verify upload successful text (hidden input)
+- refactoring code - page object model
 
 ### ... project in progress ...
