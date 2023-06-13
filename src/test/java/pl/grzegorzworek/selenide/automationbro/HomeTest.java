@@ -1,9 +1,13 @@
 package pl.grzegorzworek.selenide.automationbro;
 
+import com.codeborne.selenide.CollectionCondition;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
@@ -34,5 +38,17 @@ public class HomeTest {
         $("h1").shouldHave(text("Think different. Make different."));
 
         $x("//a[@class=\"custom-logo-link\"]").shouldBe(visible);
+    }
+
+    @Test
+    public void testMultipleElements() {
+        open("https://practice.automationbro.com/");
+
+        List<String> expectedLinks = List.of("Home", "About","Shop", "Blog","Contact","My account");
+
+        ElementsCollection linkLists = $$("#primary-menu li[id*=menu-item]");
+
+        List<String> linksListsText = linkLists.texts();
+        assertEquals(linksListsText,expectedLinks);
     }
 }
