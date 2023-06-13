@@ -27,6 +27,6 @@ public class UploadTest {
 
         $("#upfile_1").uploadFile(new File("src/test/java/pl/grzegorzworek/selenide/data/sample.png"));
 
-        $("#upfile_1").click();
+        $("#upload_1").click();
     }
 }
