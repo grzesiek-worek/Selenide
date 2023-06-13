@@ -25,5 +25,6 @@ public class UploadTest {
 
         executeJavaScript("document.getElementById(\"upfile_1\").classList.remove(\"file_input_hidden\")");
 
+        $("#upfile_1").uploadFile(new File("src/test/java/pl/grzegorzworek/selenide/data/sample.png"));
     }
 }
