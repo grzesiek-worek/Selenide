@@ -18,7 +18,7 @@ User login in <a href="src/test/java/pl/grzegorzworek/selenide/saucetest">Sauce 
 - click on Login button
 - check page title after user login
 
-### 2) Second task with using: Java, Selenide, JUnit and Page Pattern
+### 2) Second task with using: Java, Selenide and JUnit
 Search Keyword *"Selenide"* in <a href="src/test/java/pl/grzegorzworek/selenide/google">Google</a>:
 - complete search field and press Enter
 - check result - exact text
