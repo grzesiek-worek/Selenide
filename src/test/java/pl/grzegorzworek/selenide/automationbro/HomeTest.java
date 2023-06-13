@@ -2,11 +2,11 @@ package pl.grzegorzworek.selenide.automationbro;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import static com.codeborne.selenide.Selenide.title;
+import static com.codeborne.selenide.Selenide.*;
 import static org.testng.Assert.*;
-import static com.codeborne.selenide.Selenide.open;
 
 public class HomeTest {
 
@@ -19,5 +19,15 @@ public class HomeTest {
 
         String title = title();
         assertEquals(title,"Practice E-Commerce Site – Automation Bro");
+    }
+
+    @Test
+    public void testInteractingWithElements() {
+        open("https://practice.automationbro.com/");
+
+        $(By.id("get-started")).click();
+
+        String url = WebDriverRunner.url();
+        assertTrue(url.contains("get-started"));
     }
 }
