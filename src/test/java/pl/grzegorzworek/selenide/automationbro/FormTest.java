@@ -17,5 +17,8 @@ public class FormTest {
         $(".support-checkboxes ul li:nth-child(2) input").click();
         $(".support-date input").click();
         $(".flatpickr-day.nextMonthDay").click();
+
+        $("button[type=submit]").click();
+
     }
 }
