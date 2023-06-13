@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import java.io.File;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
@@ -15,5 +16,7 @@ public class UploadTest {
         $("#file-upload").uploadFile(new File("src/test/java/pl/grzegorzworek/selenide/data/sample.png"));
 
         $("#file-submit").click();
+
+        $("h3").shouldHave(text("File Uploaded!"));
     }
 }
