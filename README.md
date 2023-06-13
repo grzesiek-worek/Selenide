@@ -30,5 +30,6 @@ Open <a href="src/test/java/pl/grzegorzworek/selenide/automationbro">Automation 
 - find element by Id and verify url contains
 - verify heading by CssSelector
 - verify visible element by xPath
+- verify multiple element - check exception element from menu
 
 ### ... project in progress ...
