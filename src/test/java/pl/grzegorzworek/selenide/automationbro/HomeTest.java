@@ -48,7 +48,6 @@ public class HomeTest {
 
         ElementsCollection linkLists = $$("#primary-menu li[id*=menu-item]");
 
-        List<String> linksListsText = linkLists.texts();
-        assertEquals(linksListsText,expectedLinks);
+        linkLists.shouldHave(CollectionCondition.texts(expectedLinks));
     }
 }
