@@ -28,5 +28,7 @@ public class UploadTest {
         $("#upfile_1").uploadFile(new File("src/test/java/pl/grzegorzworek/selenide/data/sample.png"));
 
         $("#upload_1").click();
+
+        $("#wfu_messageblock_header_1_label_1").shouldHave(text("uploaded successfully"));
     }
 }
